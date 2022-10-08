@@ -130,6 +130,11 @@ table {
 }
 
 /* Styling begins here */
+@font-face {
+    font-family: 'Public Pixel';
+    src: url('./font/PublicPixel.ttf');
+}
+
 body {
     display: flex;
     flex-direction: column;
