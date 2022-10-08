@@ -5,19 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
+    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
+
     <h1>Rock-Paper-Scissors</h1>
-    <h2>To play the game:</h2>
-    <ul>
-        <li>Open your browser developer tool.</li>
-        <li>Undock the developer tool.</li>
-        <li>At header tab of the developer tool click on Console.</li>
-        <li>Type in 'Start()' to begin.</li>
-    </ul>
+
+    <p>Play a classic game of Rock-Paper-Scissors.</p>
+
+    <div class="wrapper mechanics">
+        <ul class="dynamic-txts">
+            <li>You will play against a computer.</li>
+            <li>Computer selection is generated randomly.</li>
+            <li>Select your desired play by clicking on the image below.</li>
+            <li>First to score five wins.</li>
+            <li>Press start to play...</li>
+        </ul>
+    </div>
+
+    <div class="selection">
+        <div style="display:flex; flex-direction: column;">
+            <input class="transform" selection="Rock" type="image" src="./image/rock.gif" alt="Golem (Pokemon)">
+            <span class="rock">Golem</span>
+            <span style="font-size: 1.65em; color: greenyellow">[Rock]</span>
+        </div>
+
+        <div style="display:flex; flex-direction: column;">
+            <input class="transform" selection="Paper" type="image" src="./image/paper.gif" alt="Kartana (Pokemon)">
+            <span class="paper">Kartana</span>
+            <span style="font-size: 1.65em; color: white">[Paper]</span>
+        </div>
+
+        <div style="display:flex; flex-direction: column;">
+            <input class="transform" selection="Scissor" type="image" src="./image/scissor.gif" alt="Scissor (Pokemon)">
+            <span class="scissor">Scissor</span>
+            <span style="font-size: 1.65em; color: red">[Scissor]</span>
+        </div>
+    </div>
+
+
+    <div class="result"></div>
+
+    <div class="start-quit">
+        <button class="start">START</button>
+        <button class="quit">QUIT</button>
+    </div>
+
 </body>
 
 </html>
